@@ -20,56 +20,48 @@ include('verifica_login.php');
 </head>
 
 <body>
-    
 
-        
-
-<div class="container">
-
-    <div class="subdiv1">
-        <div class="overlay">        
-            <p>Olá, <?php echo $_SESSION['nome'];?></p>
-            <p>SEJA BEM VINDO!</p>
-
-        </div>
-        
-        <iframe src="https://drive.google.com/file/d/1f2cZHz41AJyhkty_UyQ-rWSuuW-Cglb4/preview" width="640" height="480" allow="autoplay"></iframe>
-   
-
-        <?php
-            if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
-        ?> 
-            Você possui o perfil: <br> ADMINISTRADOR <br>
-
-        <?php
-            endif;
-        ?>                    
-
-        <?php
-            if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'USER'):
-        ?> 
-            <p>BEM VINDO! <br> Você possui o perfil: <br> CLIENTE</p>
-        <?php
-            endif;
-        ?>                                     
-
-            
-            <a class="modern-button" href="https://lojaintegrada.com.br/">Acessar Loja Virtual</a>
-            <br>
-            <?php
-                if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
-            ?>                
-               <a class="highlight-button" href="cadastro.php">Cadastrar novo usuário</a>
-            <?php
-                endif;
-            ?>
-            <p><a href="logout.php">Sair do sistema</a></p>
-     
-                
-    </div>
-
+<div class="overlay">        
+    Olá, <?php echo $_SESSION['nome'];?>
+    <br>
+    SEJA BEM VINDO! 
+    <br>           
+    <?php
+        if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
+    ?>                
+        <a class="highlight-button" href="cadastro.php">Cadastrar novo usuário</a>
+    <?php
+        endif;
+    ?>
 
 </div>
+        
+    
+
+<div class="gallery">        
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
+        <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>        
+        <!-- Adicione mais divs com suas imagens aqui -->
+        <!-- Certifique-se de substituir "imagem1.jpg", "imagem2.jpg", etc., pelos caminhos corretos das suas imagens -->
+    </div>
+
+    
+
+
 
 </body>
 
