@@ -21,22 +21,28 @@ include('verifica_login.php');
 
 <body>
 
-<div class="overlay">        
-    Olá, <?php echo $_SESSION['nome'];?>
-    <br>
-    SEJA BEM VINDO! 
-    <br>           
+
+<div id="header">
+    <div id="logo">
+        <img src="./img/mulher.png" alt="Imagem do Usuário" width="70" height="70">
+    </div>
     <?php
-        if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
+    if (isset($_SESSION['perfil']) && $_SESSION['perfil'] === 'ADMIN'):
     ?>                
         <a class="highlight-button" href="cadastro.php">Cadastrar novo usuário</a>
     <?php
-        endif;
+    endif;
     ?>
-
-</div>
-        
+    <div id="user-info">
+        <img src="./img/user.png" alt="Imagem do Usuário" width="40" height="40">
+        <span>
+            Olá, <?php echo $_SESSION['nome'];?>
+            <br>
+            Sair
     
+        </span>
+    </div>
+</div>      
 
 <div class="gallery">        
         <div><a href="./videos/video1.php"> <img src="./img/fundo.jpg" alt="Imagem 2">  </a>  </div>
