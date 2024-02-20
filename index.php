@@ -46,7 +46,7 @@ session_start();
                             </div>                          
 
                           
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+                            <button type="submit">Entrar</button>
                         </form>
                     </div>
                 </div>
